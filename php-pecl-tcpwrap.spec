@@ -23,13 +23,13 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 This package handles /etc/hosts.allow and /etc/hosts.deny files.
 
-This extension has in PEAR status: %{_status}.
+In PECL status of this package is: %{_status}.
 
 %description -l pl
 Za pomoc± tego pakietu mo¿liwa jest obs³uga plików /etc/hosts.allow oraz
 /etc/hosts.deny.
 
-To rozszerzenie ma w PEAR status: %{_status}.
+To rozszerzenie ma w PECL status: %{_status}.
 
 %prep
 %setup -q -c
