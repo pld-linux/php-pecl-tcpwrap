@@ -11,6 +11,7 @@ Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	bbdae2bbea97ae00134550fafed9f76e
 URL:		http://pecl.php.net/package/tcpwrap/
 BuildRequires:	libtool
+BuildRequires:	libwrap-devel
 BuildRequires:	php-devel
 Requires:	php-common
 Obsoletes:	php-pear-%{_modname}
