@@ -3,12 +3,12 @@
 Summary:	%{_modname} - tcpwrapper bindings
 Summary(pl):	%{_modname} - dowi±zania tcpwrapper
 Name:		php-pecl-%{_modname}
-Version:	0.1
+Version:	1.0
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
-# Source0-md5:	bbdae2bbea97ae00134550fafed9f76e
+# Source0-md5:	ed68d289c6ce0155b2bd6e62b6ed0996
 URL:		http://pecl.php.net/package/tcpwrap/
 BuildRequires:	libtool
 BuildRequires:	libwrap-devel
