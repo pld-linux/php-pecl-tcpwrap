@@ -26,8 +26,8 @@ This package handles /etc/hosts.allow and /etc/hosts.deny files.
 In PECL status of this package is: %{_status}.
 
 %description -l pl
-Za pomoc± tego pakietu mo¿liwa jest obs³uga plików /etc/hosts.allow oraz
-/etc/hosts.deny.
+Za pomoc± tego pakietu mo¿liwa jest obs³uga plików /etc/hosts.allow
+oraz /etc/hosts.deny.
 
 To rozszerzenie ma w PECL status: %{_status}.
 
