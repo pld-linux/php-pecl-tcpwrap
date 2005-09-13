@@ -10,7 +10,6 @@ Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	ed68d289c6ce0155b2bd6e62b6ed0996
 URL:		http://pecl.php.net/package/tcpwrap/
-BuildRequires:	libtool
 BuildRequires:	libwrap-devel
 BuildRequires:	php-devel
 Requires:	php-common
