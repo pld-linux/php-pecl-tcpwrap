@@ -1,7 +1,7 @@
 %define		_modname	tcpwrap
 %define		_status		stable
 Summary:	%{_modname} - tcpwrapper bindings
-Summary(pl):	%{_modname} - dowi±zania tcpwrapper
+Summary(pl.UTF-8):   %{_modname} - dowiÄ…zania tcpwrapper
 Name:		php-pecl-%{_modname}
 Version:	1.0
 Release:	2
@@ -23,8 +23,8 @@ This package handles /etc/hosts.allow and /etc/hosts.deny files.
 
 In PECL status of this package is: %{_status}.
 
-%description -l pl
-Za pomoc± tego pakietu mo¿liwa jest obs³uga plików /etc/hosts.allow
+%description -l pl.UTF-8
+Za pomocÄ… tego pakietu moÅ¼liwa jest obsÅ‚uga plikÃ³w /etc/hosts.allow
 oraz /etc/hosts.deny.
 
 To rozszerzenie ma w PECL status: %{_status}.
