@@ -1,7 +1,7 @@
 %define		_modname	tcpwrap
 %define		_status		stable
 Summary:	%{_modname} - tcpwrapper bindings
-Summary(pl.UTF-8):   %{_modname} - dowiązania tcpwrapper
+Summary(pl.UTF-8):	%{_modname} - dowiązania tcpwrapper
 Name:		php-pecl-%{_modname}
 Version:	1.0
 Release:	2
