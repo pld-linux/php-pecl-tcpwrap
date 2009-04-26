@@ -5,7 +5,7 @@ Summary(pl.UTF-8):	%{_modname} - dowiązania tcpwrapper
 Name:		php-pecl-%{_modname}
 Version:	1.1.3
 Release:	1
-License:	PHP 2.02
+License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{_modname}-%{version}.tgz
 # Source0-md5:	6db26ebbf6c59fedf2228e662fe78e3e
