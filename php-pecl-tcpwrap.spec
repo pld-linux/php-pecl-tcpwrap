@@ -5,7 +5,7 @@ Summary:	%{modname} - tcpwrapper bindings
 Summary(pl.UTF-8):	%{modname} - dowiązania tcpwrapper
 Name:		%{php_name}-pecl-%{modname}
 Version:	1.1.3
-Release:	7
+Release:	8
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
@@ -16,7 +16,7 @@ BuildRequires:	libwrap-devel
 BuildRequires:	rpmbuild(macros) >= 1.650
 %{?requires_php_extension}
 Provides:	php(%{modname}) = %{version}
-Obsoletes:	php-pecl-tcpwrap < 1.1.3-6
+Obsoletes:	php-pecl-tcpwrap < 1.1.3-7
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
