@@ -5,11 +5,12 @@ Summary:	%{modname} - tcpwrapper bindings
 Summary(pl.UTF-8):	%{modname} - dowiązania tcpwrapper
 Name:		%{php_name}-pecl-%{modname}
 Version:	1.1.3
-Release:	8
+Release:	9
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
 # Source0-md5:	6db26ebbf6c59fedf2228e662fe78e3e
+Patch0:		branch.diff
 URL:		http://pecl.php.net/package/tcpwrap/
 BuildRequires:	%{php_name}-devel >= 3:5.0.4
 BuildRequires:	libwrap-devel
@@ -33,6 +34,7 @@ To rozszerzenie ma w PECL status: %{status}.
 %prep
 %setup -qc
 mv %{modname}-%{version}/* .
+%patch0 -p0
 
 %build
 phpize

@@ -1,0 +1,24 @@
+Index: package.xml
+===================================================================
+--- package.xml	(.../tags/RELEASE_1_1_3)
++++ package.xml	(.../trunk)
+
+Property changes on: package.xml
+___________________________________________________________________
+Deleted: svn:mime-type
+## -1 +0,0 ##
+-application/xml
+\ No newline at end of property
+Index: tcpwrap.c
+===================================================================
+--- tcpwrap.c	(.../tags/RELEASE_1_1_3)
++++ tcpwrap.c	(.../trunk)
+@@ -39,7 +39,7 @@
+  *
+  * Every user visible function must have an entry in tcpwrap_functions[].
+  */
+-function_entry tcpwrap_functions[] = {
++zend_function_entry tcpwrap_functions[] = {
+ 	PHP_FE(tcpwrap_check,	NULL)		/* For testing, remove later. */
+ 	{NULL, NULL, NULL}	/* Must be the last line in tcpwrap_functions[] */
+ };
