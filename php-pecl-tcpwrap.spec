@@ -1,3 +1,7 @@
+#
+# Conditional build:
+%bcond_without	tests		# build without tests
+
 %define		php_name	php%{?php_suffix}
 %define		modname	tcpwrap
 %define		status		stable
@@ -15,6 +19,7 @@ URL:		http://pecl.php.net/package/tcpwrap/
 BuildRequires:	%{php_name}-devel >= 3:5.0.4
 BuildRequires:	libwrap-devel
 BuildRequires:	rpmbuild(macros) >= 1.650
+%{?with_tests:BuildRequires:	%{php_name}-cli}
 %{?requires_php_extension}
 Provides:	php(%{modname}) = %{version}
 Obsoletes:	php-pecl-tcpwrap < 1.1.3-7
@@ -40,6 +45,15 @@ mv %{modname}-%{version}/* .
 phpize
 %configure
 %{__make}
+
+%if %{with tests}
+# simple module load test
+%{__php} -n \
+	-dextension_dir=modules \
+	-dextension=%{modname}.so \
+	-m > modules.log
+grep %{modname} modules.log
+%endif
 
 %install
 rm -rf $RPM_BUILD_ROOT
