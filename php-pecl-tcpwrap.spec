@@ -9,7 +9,7 @@ Summary:	%{modname} - tcpwrapper bindings
 Summary(pl.UTF-8):	%{modname} - dowiązania tcpwrapper
 Name:		%{php_name}-pecl-%{modname}
 Version:	1.1.3
-Release:	9
+Release:	10
 License:	PHP 3.01
 Group:		Development/Languages/PHP
 Source0:	http://pecl.php.net/get/%{modname}-%{version}.tgz
